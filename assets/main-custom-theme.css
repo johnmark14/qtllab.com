@@ -1,0 +1,51 @@
+.display-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.justify-content-space-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.display-grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+.grid-col-2 {
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-row-3 {
+  -ms-grid-rows: (0.5fr)[3];
+      grid-template-rows: repeat(3, 0.5fr);
+}
+
+.grid-col-gap {
+  grid-column-gap: 40px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.form-text {
+  width: 100%;
+}
+
+.field-wrapper--pick-up-date:not(:first-child) {
+  margin-left: 10px;
+}
+
+.field-wrapper--pick-up-date .element-invisible {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  height: 1px;
+}

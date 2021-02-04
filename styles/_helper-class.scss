@@ -1,0 +1,16 @@
+// Flexbox Display Layout
+.display-flex {display: flex;}
+
+.justify-content-space-between {justify-content: space-between;}
+
+
+// Grid Display Layout
+.display-grid {display: grid;}
+
+.grid-col-2 {grid-template-columns: repeat(2, 1fr);}
+
+.grid-row-3 {grid-template-rows: repeat(3, .5fr);}
+
+.grid-col-gap {grid-column-gap: 40px;}
+
+// .grid-row-gap {grid-row-gap: 10px;}

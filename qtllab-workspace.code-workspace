@@ -4,5 +4,15 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveSassCompile.settings.formats": [
+
+			{
+				"format": "expanded",
+				"extensionName": "-custom-theme.css",
+				"savePath": "/assets/"
+			}
+		],
+		"liveSassCompile.settings.generateMap": false
+	}
 }
