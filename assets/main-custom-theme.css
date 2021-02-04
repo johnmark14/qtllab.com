@@ -26,7 +26,7 @@
 }
 
 .grid-col-gap {
-  grid-column-gap: 40px;
+  grid-column-gap: 70px;
 }
 
 * {
@@ -34,15 +34,21 @@
           box-sizing: border-box;
 }
 
-.form-text {
-  width: 100%;
+.order-form__main {
+  padding-bottom: 50px;
+  margin-bottom: 20px;
 }
 
-.field-wrapper--pick-up-date:not(:first-child) {
+.order-form__main .field-wrapper input {
+  border-width: 0px;
+  border: none;
+}
+
+.order-form__main .field-wrapper--pick-up-date:not(:first-child) {
   margin-left: 10px;
 }
 
-.field-wrapper--pick-up-date .element-invisible {
+.order-form__main .field-wrapper--pick-up-date .element-invisible {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
   clip: rect(1px, 1px, 1px, 1px);
@@ -50,16 +56,50 @@
   height: 1px;
 }
 
-.field-wrapper {
+.form-text {
+  width: 100%;
+}
+
+.field-wrapper__line {
   position: relative;
 }
 
-.field-wrapper::after {
+.field-wrapper__line::after {
   content: '';
   height: 5px;
   width: 100%;
   position: absolute;
+  bottom: 2px;
+  left: 0;
+  background: url("https://cdn.shopify.com/s/files/1/0271/7220/8715/files/border-btm.png?v=1612420874") left no-repeat;
+  background-size: cover;
+}
+
+.field-wrapper__line--custom1 {
+  position: relative;
+}
+
+.field-wrapper__line--custom1::after {
+  content: '';
+  height: 3px;
+  width: 100%;
+  position: absolute;
   bottom: -5px;
+  left: 0;
+  background: url("https://cdn.shopify.com/s/files/1/0271/7220/8715/files/border-btm.png?v=1612420874") left no-repeat;
+  background-size: cover;
+}
+
+.field-wrapper__line--custom2 {
+  position: relative;
+}
+
+.field-wrapper__line--custom2::after {
+  content: '';
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  top: 74px;
   left: 0;
   background: url("https://cdn.shopify.com/s/files/1/0271/7220/8715/files/border-btm.png?v=1612420874") left no-repeat;
   background-size: cover;
