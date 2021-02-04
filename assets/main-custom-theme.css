@@ -39,6 +39,10 @@
   margin-bottom: 20px;
 }
 
+.order-form__main .field-wrapper .form-required {
+  color: red;
+}
+
 .order-form__main .field-wrapper input {
   border-width: 0px;
   border: none;
@@ -54,6 +58,21 @@
   clip: rect(1px, 1px, 1px, 1px);
   overflow: hidden;
   height: 1px;
+}
+
+.form-actions {
+  text-align: right;
+  padding-top: 10px;
+}
+
+.form-actions .form-submit {
+  background: transparent !important;
+  padding: 0 !important;
+  color: #3FAE49;
+  font-size: 1.2em !important;
+  font-weight: bold;
+  width: auto;
+  border: none;
 }
 
 .form-text {

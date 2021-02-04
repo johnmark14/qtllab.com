@@ -6,6 +6,10 @@
     margin-bottom: 20px;
 
     .field-wrapper {
+        .form-required {
+            color: red;
+        }
+
         input {
             border-width: 0px;
             border: none;
@@ -25,6 +29,20 @@
         }
     }
     
+}
+
+.form-actions {
+    text-align: right;
+    padding-top: 10px;
+    .form-submit {
+        background: transparent !important;
+        padding: 0 !important;
+        color: #3FAE49;
+        font-size: 1.2em !important;
+        font-weight: bold;
+        width: auto;
+        border: none;
+    }
 }
 
 .form-text {
