@@ -40,6 +40,14 @@
     
 }
 
+.field-wrapper__container {
+    .date-picker {
+        padding-left: 3px;
+        padding-right: 3px;
+        vertical-align: top;
+    }
+}
+
 .form-actions {
     text-align: right;
     padding-top: 10px;
