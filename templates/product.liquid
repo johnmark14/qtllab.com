@@ -1,0 +1,68 @@
+{% comment %}
+  The contents of the product.liquid template can be found in /sections/product-template.liquid
+{% endcomment %}
+
+{% section 'product-template' %}
+{% section 'product-recommendations' %}
+
+{% if collection %}
+  <div class="text-center return-link-wrapper page-width">
+    <a href="{{ collection.url }}" class="btn btn--secondary btn--has-icon-before return-link">
+      {% include 'icon-arrow-left' %}
+      {{ 'products.product.back_to_collection' | t: title: collection.title }}
+    </a>
+  </div>
+{% endif %}
+
+<script>
+  {% comment %}
+<button type="submit" name="add" id="AddToCart-{{ section.id }}" {% unless current_variant.available %}disabled="disabled"{% endunless %} class="btn product-form__cart-submit{% if product.options.size == 1 and product.variants[0].title == 'Default Title' %} product-form__cart-submit--small{% endif %}">
+  <span id="AddToCartText-{{ section.id }}">
+    {% unless current_variant.available %}
+      {{ 'products.product.sold_out' | t }}
+    {% else %}
+      {{ 'products.product.add_to_cart' | t }}
+    {% endunless %}
+  </span>
+</button>
+{% endcomment %}
+</script>
+
+{% assign current_variant = product.selected_or_first_available_variant %}
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org/",
+  "@type": "Product",
+  "name": {{ product.title | json }},
+  "url": {{ shop.url | append: product.url | json }},
+  {%- if product.featured_image -%}
+    {%- assign image_size = product.featured_image.width | append: 'x' -%}
+    "image": [
+      {{ product.featured_image.src | img_url: image_size | prepend: "https:" | json }}
+    ],
+  {%- endif -%}
+  "description": {{ product.description | strip_html | json }},
+  {%- if current_variant.sku != blank -%}
+    "sku": {{ current_variant.sku | json }},
+  {%- endif -%}
+  "brand": {
+    "@type": "Thing",
+    "name": {{ product.vendor | json }}
+  },
+  "offers": [
+    {%- for variant in product.variants -%}
+      {
+        "@type" : "Offer",
+        {%- if variant.sku != blank -%}
+          "sku": {{ variant.sku | json }},
+        {%- endif -%}
+        "availability" : "http://schema.org/{% if product.available %}InStock{% else %}OutOfStock{% endif %}",
+        "price" : {{ variant.price | divided_by: 100.00 | json }},
+        "priceCurrency" : {{ cart.currency.iso_code | json }},
+        "url" : {{ shop.url | append: variant.url | json }}
+      }{% unless forloop.last %},{% endunless %}
+    {%- endfor -%}
+  ]
+}
+</script>

@@ -1,0 +1,744 @@
+{
+  "current": {
+    "color_text": "#3d4246",
+    "color_body_text": "#69727b",
+    "color_sale_text": "#557b97",
+    "color_button": "#557b97",
+    "color_button_text": "#fff",
+    "color_small_button_text_border": "#3d4246",
+    "color_text_field_text": "#000",
+    "color_text_field_border": "#949494",
+    "color_text_field": "#fff",
+    "color_image_overlay_text": "#fff",
+    "color_image_overlay": "#3d4246",
+    "image_overlay_opacity": 40,
+    "color_borders": "#e8e9eb",
+    "color_body_bg": "#fff",
+    "type_header_font": "work_sans_n6",
+    "type_header_base_size": 26,
+    "type_base_font": "work_sans_n4",
+    "type_base_size": 16,
+    "type_bold_product_titles": false,
+    "share_image": "",
+    "share_facebook": true,
+    "share_twitter": true,
+    "share_pinterest": true,
+    "social_twitter_link": "",
+    "social_facebook_link": "",
+    "social_pinterest_link": "",
+    "social_instagram_link": "",
+    "social_tumblr_link": "",
+    "social_snapchat_link": "",
+    "social_youtube_link": "",
+    "social_vimeo_link": "",
+    "favicon": "shopify:\/\/shop_images\/logo-wtl3.png",
+    "enable_ajax": true,
+    "checkout_header_image": "",
+    "checkout_logo_image": "",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "medium",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#fff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_body_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_accent_color": "#197bbd",
+    "checkout_button_color": "#197bbd",
+    "checkout_error_color": "#e32c2b",
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "align_logo": "left",
+          "logo": "shopify:\/\/shop_images\/Screen_Shot_2021-02-03_at_3.30.24_PM.jpg",
+          "logo_max_width": 60,
+          "main_linklist": "main-menu",
+          "message": false,
+          "home_page_only": true,
+          "message_text": "Certifications Coming Soon!",
+          "color_bg": "#7796a8",
+          "color_text": "#ffffff"
+        }
+      },
+      "hero": {
+        "type": "hero",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/testlab.jpg",
+          "alignment": "center",
+          "hero_layout": "full_width",
+          "hero_size": "medium",
+          "text_size": "large",
+          "title": "Quality Without Compromise",
+          "text": "<p><strong>QTL is one stop for all your cannabis and hemp testing needs.  We are committed to ensuring your products meets the highest standard of consumer safety and regulatory compliance testing with accuracy, certainty and integrity, and timely.  Because you trust us to do the right thing.<\/strong><\/p>",
+          "button_label": ""
+        }
+      },
+      "slideshow": {
+        "type": "slideshow",
+        "disabled": true,
+        "blocks": {
+          "slideshow-0": {
+            "type": "image",
+            "settings": {
+              "alignment": "center center",
+              "slide_title": "Image slide",
+              "subheading": "Tell your brand's story through images",
+              "button_label": ""
+            }
+          },
+          "slideshow-1": {
+            "type": "image",
+            "settings": {
+              "alignment": "center center",
+              "slide_title": "Image slide",
+              "subheading": "Tell your brand's story through images",
+              "button_label": ""
+            }
+          }
+        },
+        "block_order": [
+          "slideshow-0",
+          "slideshow-1"
+        ],
+        "settings": {
+          "slideshow_height": "adapt",
+          "text_size": "medium",
+          "text_alignment": "center center",
+          "show_overlay": true,
+          "autorotate": false,
+          "autorotate_speed": 5
+        }
+      },
+      "featured-collections": {
+        "type": "collection",
+        "disabled": true,
+        "settings": {
+          "title": "Featured collection",
+          "collection": "frontpage",
+          "grid": 3,
+          "rows": 2,
+          "show_vendor": false,
+          "show_view_all": false
+        }
+      },
+      "feature-row": {
+        "type": "feature-row",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/testing_0b371904-1802-4a3b-8346-501379d96c27.jpg",
+          "layout": "left",
+          "title": "Testing",
+          "text": "<p><br\/>We offer testing services to fulfill your needs such as cannabinoids, heavymetals, and pesticides. Everything we offer can be found on our <a href=\"\/pages\/services\" title=\"Services\">Services page<\/a>. <\/p>",
+          "button_label": ""
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "text": {
+            "type": "text",
+            "settings": {
+              "title": "Our Mission",
+              "text": "<p>Our mission is to provide trusted information to promote consumer safety and product compliance. <\/p>"
+            }
+          },
+          "newsletter": {
+            "type": "newsletter",
+            "settings": {
+              "title": "Newsletter"
+            }
+          },
+          "82cf2d12-8193-4b0b-a11a-ed0ee9b1415b": {
+            "type": "text",
+            "settings": {
+              "title": "Email Address",
+              "text": "<p><a href=\"mailto:info@qtllab.com?subject=I have a new question!\" title=\"mailto:info@qtllab.com?subject=I have a new question!\">info@qtllab.com<\/a><\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "text",
+          "newsletter",
+          "82cf2d12-8193-4b0b-a11a-ed0ee9b1415b"
+        ],
+        "settings": {
+          "show_payment_icons": false,
+          "color_footer_bg": "#f5f5f5",
+          "color_footer_text": "#3d4246"
+        }
+      },
+      "1569948925836": {
+        "type": "map",
+        "settings": {
+          "heading": "",
+          "address": "<p>15375 Barranca Parkway Suite 106 Irvine, CA 92618 <br\/><\/p><p>949-398-6460<\/p><p>Mon - Fri, 9:00 am to 4:30pm<br\/>Saturday, Closed.<br\/>Sunday, Closed.<\/p>",
+          "map_address": "15375 Barranca Parkway Suite 106 Irvine, CA 92718",
+          "button_text": "Get directions",
+          "show_pin": true,
+          "api_key": "",
+          "background_image": "shopify:\/\/shop_images\/building.jpg",
+          "background_image_position": "center center"
+        }
+      },
+      "page-services-template": {
+        "type": "page-services-template",
+        "blocks": {
+          "1569961894706": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/canna.jpg",
+              "alignment": "center center",
+              "slide_title": "TESTING SERVICES",
+              "subheading": "",
+              "button_label": ""
+            }
+          }
+        },
+        "block_order": [
+          "1569961894706"
+        ],
+        "settings": {
+          "slideshow_height": "adapt",
+          "text_size": "large",
+          "text_alignment": "left top",
+          "show_overlay": true,
+          "autorotate": false,
+          "autorotate_speed": 5
+        }
+      },
+      "page-services-details": {
+        "type": "page-services-details",
+        "blocks": {
+          "1569963657351": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/rst_180x_coming_soon.png",
+              "title": "Residual Solvent",
+              "text": "<p>Solvents can be used during processing and manufacturing process. We test for these solvents to verify that there are not harmful traces being consumed. Testing is conducted using gas chromatography on a gas chromatography-mass spectrometer. <\/p>",
+              "button_label": "",
+              "button_link": "shopify:\/\/pages\/residual-solvent"
+            }
+          },
+          "1569965138946": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/mycotoxin_180x_coming_soon.png",
+              "title": "Mycotoxin",
+              "text": "<p>Mycotoxin are another type or organic threat that needs to be tested for. They are toxins created by molds and fungi and are sources of disease. We provide mycotoxin testing by utilizing the latest liquid chromatography-mass spectrometer technology.<\/p>",
+              "button_label": "",
+              "button_link": "shopify:\/\/pages\/mycotoxin"
+            }
+          },
+          "1569965139129": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/moisture_180x_22046d39-5ed4-4920-a195-41edfe1779c4.png",
+              "title": "Moisture Content & Water Activity",
+              "text": "<p><\/p><p>We provide moisture content and water activity testing utilizing water activity meter and moisture content analyzers. These tests good for ensuring the correct moisture in product to prevent product degradation and mold growth. <\/p>",
+              "button_label": "",
+              "button_link": "shopify:\/\/pages\/moisture-content-water-activity"
+            }
+          },
+          "1569963651205": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/heavy-metals_180x_c1ed4fb5-3f2e-4658-8a17-7f068ea92dff.png",
+              "title": "Heavy metals",
+              "text": "<p>Heavy metals can be detrimental to the body. Using the latest technology science has to offer, our inductively coupled plasma-mass spectrometer can detect any heavy metals that the state of California requires.  <\/p>",
+              "button_label": "",
+              "button_link": "shopify:\/\/pages\/heavy-metals"
+            }
+          },
+          "1569963665092": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/microbiology_180x_coming_soon.png",
+              "title": "Microbials",
+              "text": "<p>Microbials are organisms like E. coli and salmonella that can cause health risks when consumed. We utilize the latest qPCR technology to detect any microbials. <\/p>",
+              "button_label": "",
+              "button_link": "shopify:\/\/pages\/microbial"
+            }
+          },
+          "1569963653942": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/pesticide_180x_7559ddb0-0e4a-46e6-b1cc-fea190eb6bc7.png",
+              "title": "Pesticides",
+              "text": "<p>Pesticides can be good for ensuring the health of a crop however, some of these pesticides pose health risks to consumers. Our methodologies will utilize both liquid and gas chromatography using a liquid chromatography-mass spectrometer triple quad and gas chromatography-mass spectrometer to meet your pesticide testing needs. <\/p>",
+              "button_label": "",
+              "button_link": "shopify:\/\/pages\/pesticides"
+            }
+          }
+        },
+        "block_order": [
+          "1569963657351",
+          "1569965138946",
+          "1569965139129",
+          "1569963651205",
+          "1569963665092",
+          "1569963653942"
+        ],
+        "settings": {
+          "title": "Tests we provide:",
+          "align_text": "center"
+        }
+      },
+      "custom-content": {
+        "type": "custom-content",
+        "blocks": {
+          "1569966365360": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/heavy-metals.png",
+              "width": "33%",
+              "alignment": "middle-right"
+            }
+          },
+          "1569966391503": {
+            "type": "text",
+            "settings": {
+              "title": "Heavy Metals",
+              "text": "<p>Heavy metals can be detrimental to the body. Using the latest technology science has to offer, our inductively coupled plasma-mass spectrometer can detect any heavy metals that the state of California requires.&nbsp;&nbsp;<\/p>",
+              "width": "50%",
+              "alignment": "center",
+              "align_text": "left"
+            }
+          }
+        },
+        "block_order": [
+          "1569966365360",
+          "1569966391503"
+        ],
+        "settings": {
+          "title": ""
+        }
+      },
+      "hero-services": {
+        "type": "hero-services",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/canna.jpg",
+          "alignment": "center",
+          "hero_layout": "full_width",
+          "hero_size": "x-small",
+          "text_size": "large",
+          "title": "SERVICES",
+          "text": "",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "pages-services-full-details": {
+        "type": "pages-services-full-details",
+        "settings": {}
+      },
+      "160779268740f93a1e": {
+        "type": "image-bar",
+        "blocks": {
+          "1607792687a642a404-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/2.png",
+              "alignment": "center",
+              "cta_label": ""
+            }
+          },
+          "1607792687a642a404-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/potency_copy.png",
+              "alignment": "center",
+              "cta_label": ""
+            }
+          }
+        },
+        "block_order": [
+          "1607792687a642a404-0",
+          "1607792687a642a404-1"
+        ],
+        "settings": {
+          "section_height": "small"
+        }
+      },
+      "16110232489f48ad35": {
+        "type": "logo-bar",
+        "blocks": {
+          "16110232489f48ad35-0": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/CCC_Logo-_Member_2020-1.png"
+            }
+          },
+          "16110232489f48ad35-1": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/new_ccia_logo.png"
+            }
+          }
+        },
+        "block_order": [
+          "16110232489f48ad35-0",
+          "16110232489f48ad35-1"
+        ],
+        "settings": {
+          "title": ""
+        }
+      }
+    },
+    "content_for_index": [
+      "hero",
+      "slideshow",
+      "featured-collections",
+      "feature-row",
+      "160779268740f93a1e",
+      "1569948925836",
+      "16110232489f48ad35"
+    ]
+  },
+  "presets": {
+    "Default": {
+      "color_text": "#3d4246",
+      "color_body_text": "#69727b",
+      "color_sale_text": "#557B97",
+      "color_borders": "#e8e9eb",
+      "color_button": "#557B97",
+      "color_button_text": "#fff",
+      "color_small_button_text_border": "#3d4246",
+      "color_text_field": "#fff",
+      "color_text_field_text": "#000",
+      "color_text_field_border": "#949494",
+      "color_image_overlay_text": "#fff",
+      "color_image_overlay": "#3d4246",
+      "image_overlay_opacity": 40,
+      "color_body_bg": "#fff",
+      "type_header_font": "work_sans_n6",
+      "type_header_base_size": 26,
+      "type_base_font": "work_sans_n4",
+      "type_base_size": 16,
+      "type_bold_product_titles": false,
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {}
+        },
+        "hero": {
+          "type": "hero",
+          "settings": {
+            "text_size": "large"
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slideshow-0": {
+              "type": "image",
+              "settings": {}
+            },
+            "slideshow-1": {
+              "type": "image",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "slideshow-0",
+            "slideshow-1"
+          ],
+          "settings": {}
+        },
+        "featured-collections": {
+          "type": "collection",
+          "settings": {
+            "collection": "frontpage"
+          }
+        },
+        "feature-row": {
+          "type": "feature-row",
+          "settings": {}
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "link_list": {
+              "type": "link_list",
+              "settings": {}
+            },
+            "text": {
+              "type": "text",
+              "settings": {}
+            },
+            "newsletter": {
+              "type": "newsletter",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "link_list",
+            "text",
+            "newsletter"
+          ],
+          "settings": {}
+        }
+      },
+      "content_for_index": [
+        "hero",
+        "featured-collections",
+        "feature-row",
+        "slideshow"
+      ]
+    },
+    "Light": {
+      "color_text": "#162950",
+      "color_body_text": "#6d6d6d",
+      "color_sale_text": "#DA2F0C",
+      "color_borders": "#e4e4e4",
+      "color_button": "#DA2F0C",
+      "color_button_text": "#ffffff",
+      "color_small_button_text_border": "#162950",
+      "color_text_field": "#ffffff",
+      "color_text_field_text": "#162950",
+      "color_text_field_border": "#909090",
+      "color_image_overlay_text": "#ffffff",
+      "color_image_overlay": "#3d3d3d",
+      "image_overlay_opacity": 40,
+      "color_body_bg": "#f8f8f8",
+      "type_header_font": "muli_n6",
+      "type_header_base_size": 26,
+      "type_base_font": "muli_n4",
+      "type_base_size": 18,
+      "type_bold_product_titles": true,
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "social_twitter_link": "",
+      "social_facebook_link": "",
+      "social_pinterest_link": "",
+      "social_instagram_link": "",
+      "social_tumblr_link": "",
+      "social_snapchat_link": "",
+      "social_youtube_link": "",
+      "social_vimeo_link": "",
+      "favicon": "",
+      "checkout_header_image": "",
+      "checkout_logo_image": "",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "small",
+      "checkout_body_background_image": "",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_image": "",
+      "checkout_sidebar_background_color": "#e8f3f6",
+      "checkout_heading_font": "Roboto",
+      "checkout_body_font": "Source Sans Pro",
+      "checkout_accent_color": "#1990c6",
+      "checkout_button_color": "#23314e",
+      "checkout_error_color": "#ff6d6d",
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "align_logo": "left",
+            "logo": "",
+            "logo_max_width": 135,
+            "main_linklist": "main-menu",
+            "message": true,
+            "color_bg": "#162950",
+            "color_text": "#ffffff"
+          }
+        },
+        "hero": {
+          "type": "hero",
+          "settings": {
+            "alignment": "center",
+            "hero_size": "x-large",
+            "text_size": "large"
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slideshow-0": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "alignment": "center center"
+              }
+            },
+            "1492095993817": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "alignment": "center"
+              }
+            }
+          },
+          "block_order": [
+            "slideshow-0",
+            "1492095993817"
+          ],
+          "settings": {
+            "slideshow_height": "medium",
+            "text_size": "medium",
+            "autorotate": false,
+            "autorotate_speed": 5
+          }
+        },
+        "featured-collections": {
+          "type": "collection",
+          "settings": {
+            "grid": 3,
+            "rows": 1,
+            "show_vendor": true,
+            "show_view_all": true
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "image_size": "medium",
+            "show_quantity_selector": false,
+            "show_variant_labels": true,
+            "show_vendor": false,
+            "enable_zoom": true,
+            "show_share_buttons": true
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "layout": "grid",
+            "grid": 2,
+            "rows": 2,
+            "show_collection_image": true,
+            "show_vendor": false,
+            "sort_enable": true,
+            "tags_enable": true
+          }
+        },
+        "1492033809691": {
+          "type": "map",
+          "settings": {}
+        },
+        "1492033877875": {
+          "type": "quotes",
+          "blocks": {
+            "1492033877875-0": {
+              "type": "quote",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "1492033877875-0"
+          ],
+          "settings": {}
+        },
+        "1492033924902": {
+          "type": "custom-content",
+          "blocks": {
+            "1492033924902-0": {
+              "type": "text",
+              "settings": {
+                "width": "100%",
+                "alignment": "center",
+                "align_text": "center"
+              }
+            }
+          },
+          "block_order": [
+            "1492033924902-0"
+          ],
+          "settings": {
+            "title": ""
+          }
+        },
+        "1492096252560": {
+          "type": "collection-list",
+          "blocks": {
+            "1492096252560-0": {
+              "type": "featured_collection",
+              "settings": {}
+            },
+            "1492096252560-1": {
+              "type": "featured_collection",
+              "settings": {}
+            },
+            "1492096252560-2": {
+              "type": "featured_collection",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "1492096252560-0",
+            "1492096252560-1",
+            "1492096252560-2"
+          ],
+          "settings": {
+            "grid": 3
+          }
+        },
+        "blog-template": {
+          "type": "blog-template",
+          "settings": {
+            "layout": "grid",
+            "blog_show_author": true,
+            "blog_show_date": false
+          }
+        },
+        "article-template": {
+          "type": "article-template",
+          "settings": {
+            "blog_show_author": true,
+            "blog_show_date": true,
+            "show_share_buttons": true
+          }
+        },
+        "cart-template": {
+          "type": "cart-template",
+          "settings": {
+            "cart_notes_enable": false
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "link_list": {
+              "type": "link_list",
+              "settings": {}
+            },
+            "text": {
+              "type": "text",
+              "settings": {}
+            },
+            "newsletter": {
+              "type": "newsletter",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "link_list",
+            "text",
+            "newsletter"
+          ],
+          "settings": {}
+        }
+      },
+      "content_for_index": [
+        "hero",
+        "featured-collections",
+        "slideshow",
+        "1492033924902",
+        "1492096252560",
+        "1492033877875",
+        "1492033809691"
+      ]
+    }
+  }
+}
