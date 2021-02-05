@@ -109,5 +109,13 @@
 
 .ui-datepicker {
     opacity: 0;
-    display: none;
+    display: none !important;
+    font-size: 14px;
+}
+
+.ui-datepicker-show {
+    opacity: 1;
+    display: block !important;
+    position: absolute;
+    z-index: 1;
 }
