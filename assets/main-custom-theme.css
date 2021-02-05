@@ -137,3 +137,8 @@
   background: url("https://cdn.shopify.com/s/files/1/0271/7220/8715/files/border-btm.png?v=1612420874") left no-repeat;
   background-size: cover;
 }
+
+.ui-datepicker {
+  opacity: 0;
+  display: none;
+}
