@@ -1,9 +1,70 @@
 // Global Variables
 
 // Objects
+function CalendarApp() {
+    this.month = new Date().getMonth();
+    this.day = 1;
+    this.year = new Date().getFullYear();
+}
+
+CalendarApp.prototype._setMonth = function(month) {
+    this.month = month;
+}
+
+CalendarApp.prototype._getMonth = function() {
+    return this.month;
+} 
+    
+CalendarApp.prototype._setDay = function(day) {
+    this.day = day;
+}
+
+CalendarApp.prototype._getDay = function() {
+    return this.day;
+}
+
+CalendarApp.prototype._setYear = function(year) {
+    this.year = year;
+}
+
+CalendarApp.prototype._getYear = function() {
+    return this.year;
+}
 
 // Event Listeners
 document.addEventListener('DOMContentLoaded', function() {
+    const calendarApp = new CalendarApp();
+
+    // Set year advance 3 years from current year
+    const d = new Date();
+    const year = d.getFullYear();
+    const yearLimit = year + 2;
+    // Initialize jQuery Calendar Widget
+    $( "#datepicker" ).datepicker({
+        yearRange: year+":"+yearLimit
+    });
+
+    for(let i = 0; i < 3; i++) {
+        $('#edit-submitted-pick-up-date-year').append($('<option>', {
+            value: year + i,
+            text: year + i
+        }));
+    }
+
+    $('#edit-submitted-pick-up-date-month').change(function() {
+        calendarApp._setMonth($(this).children("option:selected").val());
+        console.log("from object " + calendarApp._getMonth());
+    });
+
+    $('#edit-submitted-pick-up-date-day').change(function() {
+        calendarApp._setDay($(this).children("option:selected").val());
+        console.log("from object " + calendarApp._getDay());
+    });
+
+    $('#edit-submitted-pick-up-date-year').change(function() {
+        calendarApp._setYear($(this).children("option:selected").val());
+        console.log("from object " + calendarApp._getYear());
+    });
 
     // Calendar Button
     const calendarBtn = document.getElementById('calendarPicker');
@@ -24,14 +85,22 @@ document.addEventListener('DOMContentLoaded', function() {
 
         });
 
-        // Remove calendar widget when calendar btn is now in focus
-        calendarBtn.addEventListener('blur', function() {
-            $('.ui-datepicker').removeClass('ui-datepicker-show');
-        });
-    }
+        // // Remove calendar widget when calendar btn is not in focus
+        // calendarBtn.addEventListener('blur', function() {
+        //     $('.ui-datepicker').removeClass('ui-datepicker-show');
+        // });
 
-    // Initialize jQuery Calendar Widget
-    $( "#datepicker" ).datepicker();
+        document.addEventListener('click', function(e) {
+            console.log(e.target);
+            console.log('t ' + document.querySelector('.ui-icon'));
+            if($.contains(document.getElementById('datepicker'), e.target || document.querySelector('.ui-corner-all') == e.target) || document.querySelector('.ui-icon') == e.target) {
+                console.log('inside');
+            } else {
+                console.log('outside');
+            }
+        })
+
+    }
 })
 
 
