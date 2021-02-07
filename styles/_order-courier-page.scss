@@ -26,6 +26,20 @@
     }
 
     .field-wrapper--pick-up-date {
+        display: flex;
+        align-items: center;
+
+        #btn-date {
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+        }
+
+        img {
+            width: 24px;
+            height: 21px;
+        }
+         
         &:not(:first-child) {
             margin-left: 10px;
         }
@@ -34,13 +48,15 @@
             clip: rect(1px 1px 1px 1px);
             clip: rect(1px,1px,1px,1px);
             overflow: hidden;
-            height: 1px;
+            height: 1px; 
         }
     }
     
 }
 
 .field-wrapper__container {
+    vertical-align: middle;
+
     .date-picker {
         padding-left: 3px;
         padding-right: 3px;
@@ -108,14 +124,12 @@
 }
 
 .ui-datepicker {
-    opacity: 0;
-    display: none !important;
     font-size: 14px;
 }
 
-.ui-datepicker-show {
-    opacity: 1;
-    display: block !important;
-    position: absolute;
-    z-index: 1;
-}
+// .ui-datepicker-show {
+//     opacity: 1;
+//     display: block !important;
+//     position: absolute;
+//     z-index: 1;
+// }
