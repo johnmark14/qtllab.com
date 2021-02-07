@@ -1,5 +1,19 @@
 <!--###################### START Custom Form Author: PVA39 JOHN MARK  ###################### -->
 <div class="page-width">
+  <div class="order-message" id="order-message">
+    <p>
+      Your message has been sent successfully.
+    </p>
+    <p>
+      A team member will be reaching out to you shortly.
+    </p>
+    <p>
+      Thank you.
+    </p>
+    <p>
+      &nbsp;
+    </p>
+  </div>
   <div class="order-form">
     <h1 class="page-title">Order Courier</h1>
     <form action=""> 
@@ -15,8 +29,8 @@
            maxlength="128" class="form-text">
         </div>
         <div class="field-wrapper field-wrapper__line">
-          <label for="edit-submitted-phone-name">Phone Name</label>
-          <input type="text" id="edit-submitted-phone-name" name="submitted[phone_name]" 
+          <label for="edit-submitted-phone-number">Phone Number</label>
+          <input type="text" id="edit-submitted-phone-number" name="submitted[phone_name]" 
            maxlength="128" class="form-text">
         </div>
         <div class="field-wrapper field-wrapper__line">
@@ -113,7 +127,7 @@
         </div>
       </div>
       <div class="form-actions">
-        <input class="form-submit" type="submit" name="submitted[button]" value="Submit">
+        <input id="btn-form-submit" class="form-submit" type="submit" name="submitted[button]" value="Submit">
       </div>
     </form>
     
