@@ -65,7 +65,7 @@
           align-items: center;
 }
 
-.order-form__main .field-wrapper--pick-up-date #btn-date {
+.order-form__main .field-wrapper--pick-up-date #txt-date {
   opacity: 0;
   visibility: hidden;
   position: absolute;

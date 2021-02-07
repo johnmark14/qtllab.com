@@ -31,6 +31,10 @@ CalendarApp.prototype._getYear = function() {
     return this.year;
 }
 
+CalendarApp.prototype._getFullDate = function() {
+    return `${this.month}/${this.day}/${this.year}`;
+}
+
 // Event Listeners
 document.addEventListener('DOMContentLoaded', function() {
     const calendarApp = new CalendarApp();
@@ -41,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const yearLimit = year + 2;
 
     // Initialize jQuery Calendar Widget
-    $('#btn-date').datepicker({
+    $('#txt-date').datepicker({
         showOn: "button",
         buttonImage: "https://cdn.shopify.com/s/files/1/0271/7220/8715/files/calendar.png?v=1612417406",
         buttonImageOnly: true,
@@ -57,17 +61,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
     $('#edit-submitted-pick-up-date-month').change(function() {
         calendarApp._setMonth($(this).children("option:selected").val());
-        console.log("from object " + calendarApp._getMonth());
+        console.log("from object " + calendarApp._getFullDate());
+        $("#txt-date").val(calendarApp._getFullDate());
     });
 
     $('#edit-submitted-pick-up-date-day').change(function() {
         calendarApp._setDay($(this).children("option:selected").val());
-        console.log("from object " + calendarApp._getDay());
+        console.log("from object " + calendarApp._getFullDate());
+        $("#txt-date").val(calendarApp._getFullDate());
     });
 
     $('#edit-submitted-pick-up-date-year').change(function() {
         calendarApp._setYear($(this).children("option:selected").val());
-        console.log("from object " + calendarApp._getYear());
+        console.log("from object " + calendarApp._getFullDate());
+        $("#txt-date").val(calendarApp._getFullDate());
     });
 })
 
