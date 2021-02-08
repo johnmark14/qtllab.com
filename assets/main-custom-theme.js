@@ -149,11 +149,21 @@ document.addEventListener('DOMContentLoaded', function() {
         $("#edit-submitted-pick-up-date-year").val(calendarApp._getYear()).change();
     });
 
-    $("#btn-form-submit").click( (e) => {
+    // Initialize emailjs for sending email
+    (function() {
+        emailjs.init("user_jipEaELYuj3mmQhVf8wIZ");
+    })();
+
+    $("#order-form").submit( (e) => {
 
         // Prevent default behaviour
         e.preventDefault();
 
+        $('#btn-form-submit').prop('disabled', true);
+        $('#btn-form-submit').css('color', 'gray');
+        $('body').css('cursor', 'wait');
+        
+        
         const orderInfo = new OrderInformation();
 
         orderInfo._setCompanyName($("#edit-submitted-company-name").val());
@@ -164,15 +174,40 @@ document.addEventListener('DOMContentLoaded', function() {
         orderInfo._setPickupAddress($("#edit-submitted-pick-up-address").val());
         orderInfo._setAdditionalInfo($("#edit-submitted-additional-info").val());
         
-        Email.send({
-            SecureToken: "6f36a146-3a31-44ab-93d1-7b3c8077e979",
-            To: 'johmarkgabrentina@gmail.com',
-            from: "devpva39@gmail.com",
-            subject: "Test Mail",
-            body: "testing"
-        }).then(console.log('Message Sent'));
+        let templateParams = {
+            company_name: orderInfo._getCompanyName(),
+            full_name: orderInfo._getFullName(),
+            phone_number: orderInfo._getPhoneNumber(),
+            email: orderInfo._getEmail(),
+            date: orderInfo._getPickupDate(),
+            pickup_address: orderInfo._getPickupAddress(),
+            add_info: orderInfo._getAddInfo()
+        }
+
+        emailjs.send('service_tho69zu', 'order_form', templateParams).then(
+            (response) => {
+                console.log('Success!', response.status, response.text);
+                $('#order-message').addClass('order-message-show');
+                scrollTopStatus();
+                resetPref();
+            }, (error) => {
+                alert('FAILED!', error);
+                resetPref();
+            } 
+        );
 
     });
 })
 
 // Functions
+function resetPref() {
+    $('#btn-form-submit').prop('disabled', false);
+    $('#btn-form-submit').css('color', '#3FAE49');
+    $('body').css('cursor', 'auto');
+}
+
+function scrollTopStatus() {
+    $('html, body').animate({
+        'scrollTop' : $('#order-message').position().top
+    }, 1000);
+}
